@@ -9,6 +9,8 @@ var map = new kakao.maps.Map(container, options); // 지도 생성 및 객체 �
 var ps = new kakao.maps.services.Places(); // 장소 검색 객체 생성
 let base_mask_url = "https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/storesByGeo/json?" // 마스크 데이터 API 주소
 
+map.setMaxLevel(5) // 지도 최대 레벨 설정
+
 // 버튼 누르거나 Enter 눌렀을 때 검색이 되도록 만들기
 let search_btn = document.querySelector(".search-btn");
 let search_bar = document.querySelector("#search-bar");
